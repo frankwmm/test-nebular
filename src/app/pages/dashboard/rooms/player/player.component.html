@@ -1,0 +1,21 @@
+<nb-card>
+  <nb-card-header class="header">My Playlist</nb-card-header>
+
+  
+
+  <nb-card-footer class="footer">
+    <div class="volume">
+      <button nbButton ghost size="small" (click)="setVolume(0)">
+        <nb-icon class="volume-icon" icon="volume-down-outline" pack="eva"></nb-icon>
+      </button>
+      <div class="progress-wrap">
+        <input type="range" class="progress" [value]="getVolume()" max="100"
+               (input)="setVolume(volume.value)" #volume>
+        <div class="progress-foreground" [style.width.%]="getVolume()"></div>
+      </div>
+      <button nbButton ghost size="small" (click)="setVolume(100)">
+        <nb-icon class="volume-icon" icon="volume-up-outline" pack="eva"></nb-icon>
+      </button>
+    </div>
+  </nb-card-footer>
+</nb-card>
