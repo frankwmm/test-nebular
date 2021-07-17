@@ -30,8 +30,8 @@
     "postinstall": "ng build --prod"
   },
   "engines": {
-    "node": "14.17.0",
-    "npm": "6.14.13"
+    "node": "14.16.1",
+    "npm": "6.14.12"
   },
   "dependencies": {
     "@akveo/ng2-completer": "^9.0.1",
